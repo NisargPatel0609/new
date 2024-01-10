@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/contactUs.css">
+  <link rel="stylesheet" href="../assets/styles/chemistry.css">
+  <title>Document</title>
+  <script defer src="../assets/scripts/contactUs.js"></script>
+  <script defer src="../assets/scripts/main.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav_logo">
+      <a href="./">
+        <h1>CYBAGE <span>LEARNINGS</span></h1>
+      </a>
+    </div>
+
+    <div id="nav_links" class="nav_links">
+      <ul>
+        <li><a href="./chemistry.html">Chemistry</a></li>
+        <li><a href="./geography.html">Geography</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <button class="hamBtn" onclick="onHamburgerClick()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-align-justify">
+          <line x1="3" x2="21" y1="6" y2="6" />
+          <line x1="3" x2="21" y1="12" y2="12" />
+          <line x1="3" x2="21" y1="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="close" id="close">
+      <button class="hamBtn" onclick="onHamburgerClick()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="slider" class="slider slide-left">
+      <ul>
+        <li><a href="./chemistry.html">Chemistry</a></li>
+        <li><a href="./geography.html">Geography</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="contact_us">
+    <div class="contact_us-div">
+
+      <div class="contact_us-image">
+        <img src="../assets/images/contact-us.jpg" alt="">
+      </div>
+      <form id="contact_us-form" action="" onsubmit="onFormSubmit()">
+      <div class="contact_us-content">
+          <div class="contact_us-heading">
+            <h2>Contact Us</h2>
+          </div>
+          <div class="contact_us-input">
+            <input type="text" required name="" id="contact_us-input_name" placeholder="Name">
+            <input type="email" required name="" id="contact_us-input_email" placeholder="Email">
+            <input type="text" required name="" id="contact_us-input_message" placeholder="Message">
+          </div>
+          <div class="contact_us-button">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    background-color: rgb(199, 195, 195);
+}
+
+.main_heading {
+    text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.main_heading h2 {
+    font-size: xx-large;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid blue;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    position: relative;
+  }
+  
+  .searchBar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #search_input {
+  background: transparent;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+}
+
+.searchItems {
+    width: 282px;
+    position: absolute;
+    top: 52px;
+    right: 0;
+    z-index: 5;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.searchItems::-webkit-scrollbar {
+    width: 0px;
+}
+
+.item {
+    width: 100%;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0rem;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.periodic_table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    transform: scale(0.9);
+}
+
+.atomic_element {
+    border: 1px solid black;
+    padding: 0.5rem 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atomic_element:hover {
+    transform: scale(1.4);
+}
+
+.atomic_element-symbol {
+    font-size: 1.6rem;
+}
+
+.atomic_element-number {
+    font-size: 17px;
+}
+
+.atomic_element-name {
+    font-size: 12px;
+}
+
+.atomic_element-atomicMass {
+    display: none;
+}
+
+.actinide {
+    background-color: rgba(116, 255, 242, 1);
+}
+
+.alkali_metal {
+    background-color: rgb(115, 255, 115);
+}
+
+.alkaline_earth_metal {
+    background-color: rgb(154, 255, 170);
+}
+
+.metalloid {
+    background-color: rgb(161, 161, 250);
+}
+
+.noble_gas {
+    background-color: rgb(250, 255, 156);
+}
+
+.diatomic_nonmetal {
+    background-color: rgb(255, 201, 119);
+}
+
+.polyatomic_nonmetal {
+    background-color: rgb(150, 233, 253);
+}
+
+.post-transition_metal {
+    background-color: rgb(255, 151, 170);
+}
+
+.transition_metal {
+    background-color: rgb(255, 209, 124);
+}
+
+.lanthanide {
+    background-color: rgb(240, 165, 255);
+}
+
+
+@media screen and (max-width: 1400px) {
+    .nav_links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    nav {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .slider {
+      font-size: large;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .nav_logo a h1 {
+      font-size: 24px;
+    }
+  
+    .slider {
+      width: 70%;
+    }
+  
+    .close {
+      position: relative;
+      left: 10px;
+      bottom: 10px;
+    }
+  
+    .contact_us-image {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .nav_logo a h1 {
+      font-size: 20px;
+    }
+  
+    nav {
+      padding: 0 1.5rem;
+    }
+  
+    .slider {
+      font-size: medium;
+      width: 70%;
+    }
+  
+    .footer_logo a h1 {
+      font-size: 22px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .nav_logo a h1 {
+      font-size: 18px;
+    }
+  
+    nav {
+      padding: 0 1rem;
+    }
+  
+    .search_input {
+      padding: 0.2rem !important;
+    }
+  
+    .searchBar {
+      width: 90vw;
+    }
+  }
+  
+  /* periodic table */
+  @media screen and (min-width: 2200px) {
+  
+    .atomic_element,
+    .atomic_element-name {
+      font-size: 18px;
+    }
+  
+    .atomic_element-atomicMass {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .atomic_element {
+      font-size: 10px;
+    }
+  
+    .atomic_element-symbol {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .atomic_element-name {
+      display: none;
+    }
+  
+    .atomic_element-symbol {
+      margin: 0 !important;
+    }
+  
+    .atomic_element-number {
+      font-size: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .atomic_element-number {
+      font-size: 12px;
+    }
+  
+    .atomic_element-symbol {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .atomic_element-number {
+      font-size: 10px;
+    }
+  
+    .atomic_element-symbol {
+      font-size: 0.8rem;
+    }
+  
+    .atomic_element {
+      padding: 0.2rem;
+    }
+  
+    .main_heading {
+      flex-direction: column;
+      padding: 0;
+    }
+  
+    .searchBar {
+      margin-top: 2rem;
+      width: 60%;
+    }
+  
+    .searchItems {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .atomic_element-number {
+      font-size: 6px;
+    }
+  
+    .atomic_element-symbol {
+      font-size: 0.5rem;
+    }
+  
+    .atomic_element {
+      padding: 0.1rem;
+    }
+  
+    .contact_us-content {
+      width: 230px;
+    }
+  
+    .contact_us-input input {
+      padding: 0.5rem;
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    footer {
+      padding: 1rem;
+    }
+  
+    .footer_information {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer_contact-details {
+      max-width: 200px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+    }
+  }
